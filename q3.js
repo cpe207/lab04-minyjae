@@ -8,12 +8,11 @@ function primeNumber(a) {
     if (a % 2 === 0) {
         return false;
     }
-    for (var i = 3; i <= Math.sqrt(a); i++) {
+    for (var i = 3; i < a; i++) {
         if (a % i === 0) {
             return false;
         }
-        else
-            return true;
+        return true;
     }
 }
 var d1 = 10;

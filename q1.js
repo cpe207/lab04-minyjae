@@ -3,7 +3,7 @@ function typeChecker(a, b) {
         return "I LOVE YOU";
     if (typeof a === 'number' && typeof b === 'number')
         return a + b;
-    return "NOT MATCH";
+    return "NOT MATCHED";
 }
 //Test cases
 var a1 = "Jack";
