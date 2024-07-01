@@ -1,5 +1,17 @@
-function primeNumber(a) {
-  /* Your code here */
+function primeNumber(a : number) : void | boolean {
+  if(a === 2){
+    return true;
+  }
+  if(a % 2 === 0){
+    return false;
+  }
+  for(let i = 3; i < a; i++){
+    if(a % i === 0){
+      return false;
+    }
+    else return true;
+  }
+
 }
 
 const d1 = 10;

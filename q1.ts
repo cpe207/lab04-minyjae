@@ -1,5 +1,8 @@
-function typeChecker(a, b) {
+function typeChecker(a :any,b :any) {
   /* Your code here */
+  if(typeof a === 'string' && typeof b === 'string') return "I LOVE YOU";
+  if(typeof a === 'number' && typeof b === 'number') return a + b;
+  if(a !== typeof b) return "NOT MATCH";  
 }
 
 //Test cases
