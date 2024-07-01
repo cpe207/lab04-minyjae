@@ -1,12 +1,12 @@
-function arrayStringify(a :number[]) :void | null {
+function arrayStringify(a :number[]) :string | null {
   let result = "";
     for (let i = 0; i < a.length; i++) {
       if(a.length === 0){
-        return null;
+        return "";
       }
         result += a[i].toString();
     }
-    console.log(result);
+    return result;
 }
 
 const c1 :number[]= [1, 2, 3];

@@ -2,11 +2,11 @@ function arrayStringify(a) {
     var result = "";
     for (var i = 0; i < a.length; i++) {
         if (a.length === 0) {
-            return null;
+            return "";
         }
         result += a[i].toString();
     }
-    console.log(result);
+    return result;
 }
 var c1 = [1, 2, 3];
 var c2 = [10, 9, 8, 7, 6, 5];
