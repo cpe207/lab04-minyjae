@@ -1,18 +1,18 @@
 function primeNumber(a) {
     if (a <= 1) {
-        return false;
+        return "NO";
     }
     if (a === 2) {
-        return true;
+        return "YES";
     }
     if (a % 2 === 0) {
-        return false;
+        return "NO";
     }
     for (var i = 3; i < a; i++) {
         if (a % i === 0) {
-            return false;
+            return "NO";
         }
-        return true;
+        return "YES";
     }
 }
 var d1 = 10;
